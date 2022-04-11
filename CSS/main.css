@@ -141,18 +141,51 @@ span a {
 }
 
 /* GUITARS */
+.precontent {
+  background: #101010;
+  padding: 80px;
+  
+}
+.text-product h2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+}
+
+.imglogo {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 65%;
+}
+
+.text-h1 h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  padding: 50px;
+}
+
 .guitarcontainer {
   background-color: #101010;
-  padding: 70px;
-  
+  padding: 80px;
+  padding-left: 200px;
 }
 
 #guitarsSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 25px;
+  gap: 25px;  
 }
+
 
 .guitarShowcase img {
   width: 175px;

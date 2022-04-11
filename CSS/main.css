@@ -139,3 +139,46 @@ span a {
   text-transform: uppercase;
   word-spacing: 0.25em;
 }
+
+/* GUITARS */
+.guitarcontainer {
+  background-color: #101010;
+  padding: 70px;
+  
+}
+
+#guitarsSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+}
+
+.guitarShowcase img {
+  width: 175px;
+  height: 521px;
+  transition: all 300ms;
+  position: relative;
+}
+
+.guitarShowcase img:hover {
+  transform: scale(1.15);
+}
+
+.guitarShowcase h2 {
+  padding-top: 35px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.guitarShowcase h3 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+

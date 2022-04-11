@@ -170,7 +170,11 @@ span a {
   font-weight: 400;
   text-decoration: none;
   text-align: center;
-  padding: 50px;
+  padding: 32px;
+}
+
+.hrseparate {
+  opacity: 50%;
 }
 
 .guitarcontainer {

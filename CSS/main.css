@@ -12,6 +12,7 @@
 
 .ulSecondary {
   display: flex;
+  list-style: none;
 }
 
 .ulSecondary .liSecondary a {
@@ -33,7 +34,7 @@
   display: flex;
   justify-content: space-around;
   background: #000;
-  padding: 10px; 
+  padding: 5px; 
 }
 
 .logo {
@@ -47,10 +48,12 @@
 .buttoms {
   display: flex;
   align-items: flex-end;
+  margin-top: 2px;
 }
 
 .ulMain {
   display: flex;
+  list-style: none;
 }
 
 .ulMain .liMain .aMain {  
@@ -69,6 +72,7 @@ body {
   width: 90%;
   margin: auto;
   overflow: hidden;
+  margin-bottom: -100px;
 }
 
 .slider ul {
@@ -76,9 +80,15 @@ body {
   width: 400%;
 animation: transition 20s infinite;
 animation-direction: alternate;
-
 }
 
+dl, ol, ul { 
+  margin-bottom: 0;
+}
+
+ol, ul {
+  padding-left: 0rem;
+}
 .slider li {
   width: 100%;
   list-style: none;
@@ -87,7 +97,7 @@ animation-direction: alternate;
 .slider img {
   width: 100%;
   padding-bottom: 85px;
-  height: 80%;
+  height: 90%;
 }
 
 @keyframes transition {
@@ -130,6 +140,18 @@ p {
   margin: 4px;
   
 }
+.email {
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-left: 12px;
+  padding-right: 10px;
+  text-indent: -30px;
+}
+.btn {
+  margin-bottom: -5px;
+  border-radius: 10px;
+}
 
 .media {
   padding: 10px;
@@ -147,6 +169,45 @@ p {
 .imgMedia {
   height: 30px;
   padding-left: 6px;
+}
+
+.hrseparate {
+  opacity: 50%;
+}
+
+hr:not([size]) {
+  height: auto;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
+    
+}
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: none;
+    margin-inline-end: none;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.bi {
+  color: rgb(206, 206, 206)
 }
 
 .tail {
@@ -201,10 +262,6 @@ span a {
   text-decoration: none;
   text-align: center;
   padding: 32px;
-}
-
-.hrseparate {
-  opacity: 50%;
 }
 
 .guitarcontainer {

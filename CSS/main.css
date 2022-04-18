@@ -56,6 +56,14 @@
   list-style: none;
 }
 
+.ulMain .liMain .aMain:hover {
+  color: #999;
+}
+
+.ulSecondary .liSecondary a:hover {
+  color: #999;
+}
+
 .ulMain .liMain .aMain {  
   color: #ffffff;
   margin: 50px;
@@ -313,4 +321,60 @@ span a {
   text-decoration: none;
 }
 
+/* ARTISTS */
 
+#artists {
+  display: flex;
+  padding: 30px;
+  margin: 5px;
+}
+
+#artists2 {
+  display: flex;
+  padding: 30px;
+  margin: 5px;
+  flex-direction: row-reverse;
+}
+
+.artistimg {
+  width: 75%;
+  border-color: white;
+  border-style: ridge;
+  opacity: 60%;
+  height: 100%;
+}
+
+.artisttext {
+  padding: 25px;
+  margin: 50px;
+}
+
+.hidden {
+  position: absolute;
+  opacity: 0;
+}
+
+.hidden:hover {
+  opacity: 100%;
+}
+
+.artisttext:hover {
+  transform: scale(1.05);
+}
+
+.h2artist {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.partist {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 2;
+}

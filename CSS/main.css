@@ -440,4 +440,105 @@ input[type='submit'] {
   background-color: rgb(182, 182, 182);
   cursor: pointer;
 }
+
+/* ABOUT US */
+.aboutuscontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imgcontainer img {
+  height: 600px;
+  width: 1600px;
+}
+
+.aboutuscontainer2 {
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1480px;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  position: relative;
+  width: 100%;
+  margin-bottom: 170px;
+}
+.aboutuscontent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   
+}
+
+.aboutuscontent h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-spacing: 0.25em;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.quote {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.4;
+}
+
+.ownerlogo img {
+  margin-left: -91px;
+  display: flex;
+  justify-content: flex-start;
+  width: 600px;
+  height: 500px;
+}
+
+.owner {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 170px;
+}
+
+.container .owner h2 {
+  display: flex;  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-left: 180px;
+}
+
+.greetings {
+  padding: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: rgb(190, 190, 190);
+  font-weight: 400;
+  text-decoration: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 184px;
+  margin-inline-end: 0px;
+  text-transform: uppercase;
+}
+
+
+
+

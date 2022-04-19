@@ -378,3 +378,66 @@ span a {
   font-weight: 100;
   line-height: 2;
 }
+
+/* FORM */
+#form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: -70px;
+}
+.formcontact {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  background-color: rgb(230, 230, 230);
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.headerform {
+  width: 100%;
+  background-color: black;
+}
+
+.headerform span {
+  font-size: 100px;
+  display: block;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.contact {
+  width: 100%;
+  padding: 0.8rem;
+  overflow: hidden;
+  color: rgb(3, 3, 3);
+}
+
+.contact label, .contact input, .contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact input:not([type='submit']), .contact textarea {
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+.contact textarea {
+  min-height: 100px;
+}
+
+input[type='submit'] {
+  padding: 10px;
+  border: none;
+  background-color: rgb(182, 182, 182);
+  cursor: pointer;
+}
+  

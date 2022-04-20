@@ -608,7 +608,7 @@ input[type='submit'] {
 
   .email {
     border-radius: 10px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     text-align: center;
     margin-left: 12px;
     padding-right: 115px;
@@ -617,6 +617,10 @@ input[type='submit'] {
   .btn {
     margin-bottom: -5px;
     border-radius: 10px;
+    width: 40px;
+    font-size: 12px;
+    text-align: center;
+  
   }
   .tail {
     display: flex;

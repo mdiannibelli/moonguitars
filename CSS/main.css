@@ -40,7 +40,7 @@
   position: relative;
   height: 80px;
   padding: 0px;
-  margin-left: -100px;
+  margin-left: -150px;
   bottom: 30px;
 }
 
@@ -289,6 +289,12 @@ span a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 25px;  
+}
+
+.accessoriescontainer {
+  background-color: #101010;
+  padding: 80px;
+  padding-left: 200px;
 }
 
 
@@ -611,7 +617,7 @@ input[type='submit'] {
     border-radius: 10px;
     font-size: 0.9rem;
     text-align: center;
-    margin-left: 12px;
+    margin-left: 5px;
     padding-right: 115px;
     text-indent: -30px;
   }
@@ -619,7 +625,7 @@ input[type='submit'] {
     margin-bottom: -5px;
     border-radius: 10px;
     width: 40px;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
   
   }
@@ -645,10 +651,11 @@ input[type='submit'] {
     word-spacing: 0.25em;
   }
 
-  /* GUITARS */
+  /* GUITARS & BASSES */
   .precontent {
     background: #101010;
     padding: 40px;
+    margin-left: 10px;
   }
   .imglogo {
     padding: 0px;
@@ -657,7 +664,7 @@ input[type='submit'] {
     width: 10%;
     display: flex;
     justify-content: center;
-    margin-left: 165px;
+    margin-left: 150px;
   }
   
   .text-h1 h1 {
@@ -678,6 +685,121 @@ input[type='submit'] {
     width: 150px;
     height: 490px;
   }
+
+  /* ACCESSORIES */
+
+  #accessoriesSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+  }
+
+  .accessoriescontainer {
+    margin-top: -100px;
+    padding: 0px;
+    padding-left: 135px;
+  }
+
+  /* ARTISTS */
+  #artists {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #artists2 {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .artistimg {
+    position: absolute;
+    width: auto;
+    height: auto;
+    opacity: 60%;
+  }
+
+  .artistimg img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .hidden {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .artisttext {
+    padding: 25px;
+    margin: 50px;
+  }
+
+  .h2artist {
+    text-align: center;
+  }
+  
+  .partist {
+    padding-top: 300px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 2;
+    text-align: left;
+  }
+
+  /* ABOUT US */
+  .owner {
+    margin-bottom: 100px;
+  }
+  .imgcontainer img {
+    height: 500px;
+    width: 550px;
+  }
+ 
+  .aboutuscontent h1 {
+    word-spacing: 0.20em;
+    font-size: 2.5rem;
+  }
+  
+  .quote {
+    margin-inline-end: 25px;
+    line-height: 1.4;
+  }
+
+  
+  .owner {
+    flex-direction: column;
+  }
+  
+  .container .owner h2 {
+    margin-left: 1px;
+  }
+  
+  .greetings {
+    padding: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px
+   
+  }
+
+  /* HELP & SUPPORT */
+  .helpsupport {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding-bottom: 40px;
+    margin-right: 25px;
+  
+  }
 }
 
 /* Desktop */
@@ -688,4 +810,10 @@ input[type='submit'] {
   .icon-menu {
     display: none;
   }
+}
+
+
+/* IPAD */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
 }

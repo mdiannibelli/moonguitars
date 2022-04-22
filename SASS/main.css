@@ -1057,7 +1057,8 @@ body {
             flex-direction: column;
   }
   .aboutuscontainer2 .aboutuscontent .container .owner h2 {
-    margin-left: 1px;
+    margin-left: 0px;
+    text-align: center;
   }
   .aboutuscontainer2 .aboutuscontent .container .owner .greetings {
     padding: 0px;

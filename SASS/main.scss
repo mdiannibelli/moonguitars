@@ -903,9 +903,10 @@ body {
                       .owner {
                         margin-bottom: 100px;
                         flex-direction: column;
-                
+              
                       h2 {
-                        margin-left: 1px;
+                        margin-left: 0px;
+                        text-align: center;
                       }
                       
                       .greetings {

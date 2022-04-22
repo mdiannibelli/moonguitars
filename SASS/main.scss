@@ -3,12 +3,14 @@
     padding: 0;
 }
 
+@import 'vars';
+
 
 /* INDEX */
 .navSecondary {
     display: flex;
     justify-content: end;
-    background-color: black;
+    background-color: $blackColor;
     padding: 5px;
     
     .ulSecondary {
@@ -17,16 +19,16 @@
     }
 
     .ulSecondary .liSecondary a {
-        color: #ffffff;;
+        color: $whiteColor;;
         margin: 15px;
         font-size: 1rem;
         text-decoration: none;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: $font1;
         letter-spacing: 3px;
     }
 
     .aSecondary1 {
-        border-right: white solid;
+        border-right: $whiteColor solid;
         padding-right: 40px;
     }
 }
@@ -34,7 +36,7 @@
 .header {
     display: flex;
     justify-content: space-around;
-    background: #000;
+    background: $blackColor;
     padding: 5px;
     padding-top: 0px;
 
@@ -58,24 +60,24 @@
     }
 
     .ulMain .liMain .aMain:hover {
-        color: #999;
+        color: $greyColor;
     }
 
     .ulSecondary .liSecondary a:hover {
-        color: #999;
+        color: $greyColor;
     }
 
     .ulMain .liMain .aMain {
-        color: #ffffff;
+        color: $whiteColor;
         margin: 50px;
         font-size: 2rem;
         text-decoration: none;
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font2;
     }
 }
 
 body {
-    background-color: #101010;
+    background-color: $bgColor;
 }
 
 .slider {
@@ -126,18 +128,18 @@ body {
 .site_footer {
     display: flex;
     justify-content: space-evenly;
-    background-color: #000;
+    background-color: $blackColor;
     padding: 50px;
     padding-bottom: 40px;
 
     .form {
-        color: #ffffff;
+        color: $whiteColor;
         font-size: 1.2rem;
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font2;
     }
 
     .h2Footer {
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font3;
         font-weight: 1500;
         letter-spacing: 3px;
         text-transform: uppercase;
@@ -145,9 +147,9 @@ body {
 
     p {
         font-size: 0.8rem;
-        font-family: 'Montserrat', sans-serif;
-        color: rgb(172, 172, 172);
-        margin: 4px;
+        font-family: $font3;
+        color: $lightgreyColor;
+        margin: 3px;
     }
 
     .email {
@@ -165,16 +167,18 @@ body {
     }
 
     .media {
-        padding: 10px;
+        padding-top: 10px;
     }
 
     .h2Media {
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        color: $whiteColor;
+        font-family: $font3;
         font-size: 1.5rem;
         font-weight: 100;
         letter-spacing: 3px;
         text-transform: uppercase;
+        text-align: center;
+        margin-inline-start: 30px;
     }
 
     .imgMedia {
@@ -211,11 +215,11 @@ body {
     .icons {
         display: flex;
         justify-content: space-around;
-        gap: 10px;
+        gap: 25px;
     }
 
     .bi {
-        color: rgb(206, 206, 206);
+        color: $lightgreyColor;
     }
 }
 
@@ -225,14 +229,14 @@ body {
     padding: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #101010;
-    color: #999;
+    background-color: $bgColor;
+    color: $greyColor;
     font-size: .8125rem;
     line-height: 1.5rem;
 
     span a {
-        color: rgb(255, 255, 255);
-        font-family: 'Montserrat', sans-serif;
+        color: $lightgreyColor;
+        font-family: $font3;
         font-size: 0.8rem;
         font-weight: 100;
         text-decoration: none;
@@ -247,8 +251,8 @@ body {
     padding: 80px;
 
     .text-product h2 {
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        color: $whiteColor;
+        font-family: $font3;
         font-size: 1rem;
         font-weight: 400;
         text-decoration: none;
@@ -264,8 +268,8 @@ body {
     }
 
     .text-h1 h1 {
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        color: $whiteColor;
+        font-family: $font3;
         font-size: 3rem;
         font-weight: 400;
         text-decoration: none;
@@ -274,12 +278,12 @@ body {
     }
     .hrseparate {
         opacity: 50%;
-        color: white;
+        color: $whiteColor;
     }
 }
 
 .guitarcontainer {
-    background-color: #101010;
+    background-color: $bgColor;
     padding: 80px;
     padding-left: 200px;
 
@@ -303,16 +307,16 @@ body {
 
     .guitarShowcase h2 {
         padding-top: 35px;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        color: $whiteColor;
+        font-family: $font3;
         font-size: 1.5rem;
         font-weight: 100;
         text-decoration: none;
     }
 
     .guitarShowcase h3 {
-        color: #ffffff;
-        font-family: 'Bebas Neue', cursirve;
+        color: $whiteColor;
+        font-family: $font2;
         font-size: 1.5rem;
         font-weight: 400;
         text-decoration: none;
@@ -321,7 +325,7 @@ body {
 
 /* ACCESSORIES */
 .accessoriescontainer {
-    background-color: #101010;
+    background-color: $bgColor;
     padding: 80px;
     padding-left: 200px;
 
@@ -345,16 +349,16 @@ body {
 
     .guitarShowcase h2 {
         padding-top: 35px;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        color: $whiteColor;
+        font-family: $font3;
         font-size: 1.5rem;
         font-weight: 100;
         text-decoration: none;
     }
 
     .guitarShowcase h3 {
-        color: #ffffff;
-        font-family: 'Bebas Neue', cursirve;
+        color: $whiteColor;
+        font-family: $font2;
         font-size: 1.5rem;
         font-weight: 400;
         text-decoration: none;
@@ -372,7 +376,7 @@ body {
 
     .artistimg {
         width: 75%;
-        border-color: #ffffff;
+        border-color: $whiteColor;
         border-style: ridge;
         opacity: 60%;
         height: 100%;
@@ -384,8 +388,8 @@ body {
     }
 
     .h2artist {
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        color: $whiteColor;
+        font-family: $font3;
         font-size: 2rem;
         font-weight: 400;
         letter-spacing: 2px;
@@ -393,8 +397,8 @@ body {
     }
 
     .partist {
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        color: $whiteColor;
+        font-family: $font3;
         font-size: 1rem;
         font-weight: 100;
         line-height: 2;
@@ -422,7 +426,7 @@ body {
 
     .artistimg {
         width: 75%;
-        border-color: #ffffff;
+        border-color: $whiteColor;
         border-style: ridge;
         opacity: 60%;
         height: 100%;
@@ -434,8 +438,8 @@ body {
     }
 
     .h2artist {
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        color: $whiteColor;
+        font-family: $font3;
         font-size: 2rem;
         font-weight: 400;
         letter-spacing: 2px;
@@ -443,8 +447,8 @@ body {
     }
 
     .partist {
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        color: $whiteColor;
+        font-family: $font3;
         font-size: 1rem;
         font-weight: 100;
         line-height: 2;
@@ -472,9 +476,9 @@ body {
     margin-top: -70px;
 
     .formcontact {
-        font-family: 'Montserrat', sans-serif;
-        color: #ffffff;
-        background-color: rgb(230, 230, 230);
+        font-family: $font3;
+        color: $whiteColor;
+        background-color: $lightgreyColor;
         width: 700px;
         display: flex;
         flex-wrap: wrap;
@@ -483,7 +487,7 @@ body {
       
       .headerform {
         width: 100%;
-        background-color: black;
+        background-color: $blackColor;
       }
       
       .headerform span {
@@ -509,7 +513,7 @@ body {
       .contact input:not([type='submit']), .contact textarea {
         border: none;
         border-bottom: 2px solid rgb(0, 0, 0);
-        background-color: rgb(230, 230, 230);
+        background-color: $lightgreyColor;
         margin-bottom: 10px;
         font-size: 20px;
         outline: none;
@@ -522,7 +526,7 @@ body {
       input[type='submit'] {
         padding: 10px;
         border: none;
-        background-color: rgb(182, 182, 182);
+        background-color: $lightgreyColor;
         cursor: pointer;
       }
     }
@@ -540,7 +544,7 @@ body {
 }
 
 .aboutuscontainer2 {
-    background-color: black;
+    background-color: $blackColor;
     margin-left: auto;
     margin-right: auto;
     max-width: 1480px;
@@ -567,7 +571,7 @@ body {
       .aboutuscontent h1 {
         font-family: 'Montserrat', sans-serif;
         font-size: 3rem;
-        color: white;
+        color: $whiteColor;
         font-weight: 400;
         text-decoration: none;
         text-transform: uppercase;
@@ -578,9 +582,9 @@ body {
       
       .quote {
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font3;
         font-size: 1.5rem;
-        color: white;
+        color: $whiteColor;
         font-weight: 400;
         text-decoration: none;
         margin-block-start: 1em;
@@ -606,9 +610,9 @@ body {
       
       .container .owner h2 {
         display: flex;  
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font3;
         font-size: 2rem;
-        color: white;
+        color: $whiteColor;
         font-weight: 400;
         text-decoration: none;
         margin-block-start: 1em;
@@ -621,9 +625,9 @@ body {
       .greetings {
         padding: 10px;
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font3;
         font-size: 1rem;
-        color: rgb(190, 190, 190);
+        color: $lightgreyColor;
         font-weight: 400;
         text-decoration: none;
         margin-block-start: 1em;
@@ -654,14 +658,14 @@ body {
         #bar {
             width: 100%;
             position: fixed;
-            background: white;
+            background: $whiteColor;
             z-index: 1000;
             display: none;
         }
 
         .icon-menu {
                 display: flex;
-                color: rgb(255, 255, 255);
+                color: $lightgreyColor;
                 font-size: 42px;
                 margin-top: 40px;
                 left: 45px;
@@ -702,8 +706,8 @@ body {
                 
                   p {
                     font-size: 0.8rem;
-                    font-family: 'Montserrat', sans-serif;
-                    color: rgb(172, 172, 172);
+                    font-family: $font3;
+                    color: $lightgreyColor;
                     margin: 10px;
                     padding-left: 25px;
                   }
@@ -731,13 +735,13 @@ body {
                     padding: 0px;
                     padding-left: 0px;
                     padding-right: 0px;
-                    background-color: #101010;
-                    color: #999;
+                    background-color: $bgColor;
+                    color: $greyColor;
                     font-size: 0.5rem;
                     margin-left: 5px;
                     span a {
-                        color: rgb(255, 255, 255);
-                        font-family: 'Montserrat', sans-serif;
+                        color: $lightgreyColor;
+                        font-family: $font3;
                         font-size: 0.4rem;
                         font-weight: 100;
                         text-decoration: none;
@@ -748,7 +752,7 @@ body {
              /* GUITARS & BASSES */
                 }
                 .precontent {
-                    background: #101010;
+                    background: $bgColor;
                     padding: 40px;
                     margin-left: 10px;
                   
@@ -828,8 +832,8 @@ body {
                   
                   .partist {
                     padding-top: 300px;
-                    color: white;
-                    font-family: 'Montserrat', sans-serif;
+                    color: $whiteColor;
+                    font-family: $font3;
                     font-size: 1rem;
                     font-weight: 100;
                     line-height: 2;
@@ -871,8 +875,8 @@ body {
                       
                       .partist {
                         padding-top: 300px;
-                        color: white;
-                        font-family: 'Montserrat', sans-serif;
+                        color: $whiteColor;
+                        font-family: $font3;
                         font-size: 1rem;
                         font-weight: 100;
                         line-height: 2;
@@ -921,8 +925,8 @@ body {
             }
              /* HELP & SUPPORT */
   .helpsupport {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: $whiteColor;
+    font-family: $font3;
     font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
@@ -986,8 +990,8 @@ body {
   }
   .media {
     .h2Media {
-      color: white;
-      font-family: 'Montserrat', sans-serif;
+      color: $whiteColor;
+      font-family: $font3;
       font-size: 1.5rem;
     }
     .icons {
@@ -998,7 +1002,7 @@ body {
   /* GUITAR & BASSES */
 
   .precontent {
-    background: #101010;
+    background: $bgColor;
     padding: 40px;
     margin-left: 10px;
 
@@ -1079,8 +1083,8 @@ body {
     
     .partist {
       padding-top: 12px;
-      color: white;
-      font-family: 'Montserrat', sans-serif;
+      color: $whiteColor;
+      font-family: $font3;
       font-size: 1rem;
       font-weight: 100;
       line-height: 2;
@@ -1124,8 +1128,8 @@ body {
     
     .partist {
       padding-top: 12px;
-      color: white;
-      font-family: 'Montserrat', sans-serif;
+      color: $whiteColor;
+      font-family: $font3;
       font-size: 1rem;
       font-weight: 100;
       line-height: 2;

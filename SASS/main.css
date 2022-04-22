@@ -11,7 +11,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  background-color: black;
+  background-color: #000;
   padding: 5px;
 }
 
@@ -27,12 +27,12 @@
   margin: 15px;
   font-size: 1rem;
   text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 3px;
 }
 
 .navSecondary .aSecondary1 {
-  border-right: white solid;
+  border-right: #ffffff solid;
   padding-right: 40px;
 }
 
@@ -85,7 +85,7 @@
   margin: 50px;
   font-size: 2rem;
   text-decoration: none;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 body {
@@ -198,11 +198,11 @@ body {
 .site_footer .form {
   color: #ffffff;
   font-size: 1.2rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .site_footer .h2Footer {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 1500;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -210,9 +210,9 @@ body {
 
 .site_footer p {
   font-size: 0.8rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #acacac;
-  margin: 4px;
+  margin: 3px;
 }
 
 .site_footer .email {
@@ -230,16 +230,19 @@ body {
 }
 
 .site_footer .media {
-  padding: 10px;
+  padding-top: 10px;
 }
 
 .site_footer .h2Media {
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
   letter-spacing: 3px;
   text-transform: uppercase;
+  text-align: center;
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
 }
 
 .site_footer .imgMedia {
@@ -283,11 +286,11 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 10px;
+  gap: 25px;
 }
 
 .site_footer .bi {
-  color: #cecece;
+  color: #acacac;
 }
 
 .tail {
@@ -307,8 +310,8 @@ body {
 }
 
 .tail span a {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
+  color: #acacac;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   font-weight: 100;
   text-decoration: none;
@@ -324,7 +327,7 @@ body {
 
 .precontent .text-product h2 {
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
@@ -347,7 +350,7 @@ body {
 
 .precontent .text-h1 h1 {
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: 400;
   text-decoration: none;
@@ -357,7 +360,7 @@ body {
 
 .precontent .hrseparate {
   opacity: 50%;
-  color: white;
+  color: #ffffff;
 }
 
 .guitarcontainer {
@@ -392,7 +395,7 @@ body {
 .guitarcontainer .guitarShowcase h2 {
   padding-top: 35px;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
   text-decoration: none;
@@ -400,7 +403,7 @@ body {
 
 .guitarcontainer .guitarShowcase h3 {
   color: #ffffff;
-  font-family: 'Bebas Neue', cursirve;
+  font-family: "Bebas Neue", cursive;
   font-size: 1.5rem;
   font-weight: 400;
   text-decoration: none;
@@ -439,7 +442,7 @@ body {
 .accessoriescontainer .guitarShowcase h2 {
   padding-top: 35px;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
   text-decoration: none;
@@ -447,7 +450,7 @@ body {
 
 .accessoriescontainer .guitarShowcase h3 {
   color: #ffffff;
-  font-family: 'Bebas Neue', cursirve;
+  font-family: "Bebas Neue", cursive;
   font-size: 1.5rem;
   font-weight: 400;
   text-decoration: none;
@@ -477,7 +480,7 @@ body {
 
 #artists .h2artist {
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 2px;
@@ -486,7 +489,7 @@ body {
 
 #artists .partist {
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 100;
   line-height: 2;
@@ -533,7 +536,7 @@ body {
 
 #artists2 .h2artist {
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 2px;
@@ -542,7 +545,7 @@ body {
 
 #artists2 .partist {
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 100;
   line-height: 2;
@@ -575,9 +578,9 @@ body {
 }
 
 #form .formcontact {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  background-color: #e6e6e6;
+  background-color: #acacac;
   width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,7 +594,7 @@ body {
 
 #form .headerform {
   width: 100%;
-  background-color: black;
+  background-color: #000;
 }
 
 #form .headerform span {
@@ -617,7 +620,7 @@ body {
 #form .contact input:not([type='submit']), #form .contact textarea {
   border: none;
   border-bottom: 2px solid black;
-  background-color: #e6e6e6;
+  background-color: #acacac;
   margin-bottom: 10px;
   font-size: 20px;
   outline: none;
@@ -630,7 +633,7 @@ body {
 #form input[type='submit'] {
   padding: 10px;
   border: none;
-  background-color: #b6b6b6;
+  background-color: #acacac;
   cursor: pointer;
 }
 
@@ -650,7 +653,7 @@ body {
 }
 
 .aboutuscontainer2 {
-  background-color: black;
+  background-color: #000;
   margin-left: auto;
   margin-right: auto;
   max-width: 1480px;
@@ -688,7 +691,7 @@ body {
 .aboutuscontainer2 .aboutuscontent h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
-  color: white;
+  color: #ffffff;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
@@ -699,9 +702,9 @@ body {
 
 .aboutuscontainer2 .quote {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
-  color: white;
+  color: #ffffff;
   font-weight: 400;
   text-decoration: none;
   -webkit-margin-before: 1em;
@@ -739,9 +742,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  color: white;
+  color: #ffffff;
   font-weight: 400;
   text-decoration: none;
   -webkit-margin-before: 1em;
@@ -758,9 +761,9 @@ body {
 .aboutuscontainer2 .greetings {
   padding: 10px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  color: #bebebe;
+  color: #acacac;
   font-weight: 400;
   text-decoration: none;
   -webkit-margin-before: 1em;
@@ -798,7 +801,7 @@ body {
   #bar {
     width: 100%;
     position: fixed;
-    background: white;
+    background: #ffffff;
     z-index: 1000;
     display: none;
   }
@@ -806,7 +809,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: white;
+    color: #acacac;
     font-size: 42px;
     margin-top: 40px;
     left: 45px;
@@ -848,7 +851,7 @@ body {
   }
   .site_footer p {
     font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #acacac;
     margin: 10px;
     padding-left: 25px;
@@ -885,8 +888,8 @@ body {
     /* GUITARS & BASSES */
   }
   .tail span a {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: #acacac;
+    font-family: "Montserrat", sans-serif;
     font-size: 0.4rem;
     font-weight: 100;
     text-decoration: none;
@@ -984,8 +987,8 @@ body {
   }
   #artists .partist {
     padding-top: 300px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 100;
     line-height: 2;
@@ -1028,8 +1031,8 @@ body {
   }
   #artists2 .partist {
     padding-top: 300px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 100;
     line-height: 2;
@@ -1069,8 +1072,8 @@ body {
   }
   /* HELP & SUPPORT */
   .helpsupport {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
@@ -1127,8 +1130,8 @@ body {
     border-radius: 10px;
   }
   .media .h2Media {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
   }
   .media .icons {
@@ -1217,8 +1220,8 @@ body {
   }
   #artists .partist {
     padding-top: 12px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 100;
     line-height: 2;
@@ -1262,8 +1265,8 @@ body {
   }
   #artists2 .partist {
     padding-top: 12px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 100;
     line-height: 2;

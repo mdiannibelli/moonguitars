@@ -1,21 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+/* INDEX */
 .navSecondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   background-color: black;
   padding: 5px;
 }
 
-.ulSecondary {
+.navSecondary .ulSecondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.ulSecondary .liSecondary a {
+.navSecondary .ulSecondary .liSecondary a {
   color: #ffffff;
   margin: 15px;
   font-size: 1rem;
@@ -24,19 +31,23 @@
   letter-spacing: 3px;
 }
 
-.aSecondary1 {
+.navSecondary .aSecondary1 {
   border-right: white solid;
   padding-right: 40px;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: #000;
-  padding: 5px; 
+  padding: 5px;
+  padding-top: 0px;
 }
 
-.logo {
+.header .logo {
   position: relative;
   height: 80px;
   padding: 0px;
@@ -44,31 +55,37 @@
   bottom: 30px;
 }
 
-.buttoms {
+.header .buttoms {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  margin-top: 2px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 1px;
 }
 
-.ulMain {
+.header .ulMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.ulMain .liMain .aMain:hover {
+.header .ulMain .liMain .aMain:hover {
   color: #999;
 }
 
-.ulSecondary .liSecondary a:hover {
+.header .ulSecondary .liSecondary a:hover {
   color: #999;
 }
 
-.ulMain .liMain .aMain {  
+.header .ulMain .liMain .aMain {
   color: #ffffff;
   margin: 50px;
   font-size: 2rem;
   text-decoration: none;
- font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', cursive;
 }
 
 body {
@@ -83,19 +100,24 @@ body {
 }
 
 .slider ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 400%;
-animation: transition 20s infinite;
-animation-direction: alternate;
+  -webkit-animation: transition 20s infinite;
+          animation: transition 20s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
-dl, ol, ul { 
+.slider dl, .slider ol, .slider ul {
   margin-bottom: 0;
 }
 
-ol, ul {
+.slider ol, .slider ul {
   padding-left: 0rem;
 }
+
 .slider li {
   width: 100%;
   list-style: none;
@@ -107,47 +129,93 @@ ol, ul {
   height: 90%;
 }
 
-@keyframes transition {
-  0% { margin-left: 0; }
-  20% { margin-left: 0; }
-  25% { margin-left: -100%;}
-  45% { margin-left: -100%;}
-  50% { margin-left: -200%;}
-  70% { margin-left: -200%;}
-  75% { margin-left: -300%;}
-  100% { margin-left: -300%;}
+@-webkit-keyframes transition {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
 
+@keyframes transition {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
 
 .site_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: #000;
   padding: 50px;
   padding-bottom: 40px;
 }
 
-.form {
+.site_footer .form {
   color: #ffffff;
   font-size: 1.2rem;
   font-family: 'Bebas Neue', cursive;
 }
 
-.h2Footer {
+.site_footer .h2Footer {
   font-family: 'Montserrat', sans-serif;
   font-weight: 1500;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
-p {
+.site_footer p {
   font-size: 0.8rem;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(172, 172, 172);
+  color: #acacac;
   margin: 4px;
-  
 }
-.email {
+
+.site_footer .email {
   border-radius: 10px;
   font-size: 1.1rem;
   text-align: center;
@@ -155,17 +223,18 @@ p {
   padding-right: 10px;
   text-indent: -30px;
 }
-.btn {
+
+.site_footer .btn {
   margin-bottom: -5px;
   border-radius: 10px;
 }
 
-.media {
+.site_footer .media {
   padding: 10px;
 }
 
-.h2Media {
-  color: white;
+.site_footer .h2Media {
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
@@ -173,63 +242,72 @@ p {
   text-transform: uppercase;
 }
 
-.imgMedia {
+.site_footer .imgMedia {
   height: 30px;
   padding-left: 6px;
 }
 
-.hrseparate {
-  opacity: 50%;
-}
-
-hr:not([size]) {
+.site_footer hr:not([size]) {
   height: auto;
 }
 
-hr {
+.site_footer hr {
   margin: 0;
   padding: 0;
-    color: inherit;
-    background-color: currentColor;
-    border: 0;
-    opacity: 0.25;
-    
-}
-hr {
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: none;
-    margin-inline-end: none;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
 }
 
-.icons {
+.site_footer hr {
+  display: block;
+  unicode-bidi: -webkit-isolate;
+  unicode-bidi: isolate;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-start: none;
+          margin-inline-start: none;
+  -webkit-margin-end: none;
+          margin-inline-end: none;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.site_footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 10px;
 }
 
-.bi {
-  color: rgb(206, 206, 206)
+.site_footer .bi {
+  color: #cecece;
 }
 
 .tail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 5px;
   padding-left: 30px;
   padding-right: 30px;
   background-color: #101010;
   color: #999;
   font-size: .8125rem;
-  line-height: 1.5rem; 
+  line-height: 1.5rem;
 }
-span a {
-  color: rgb(255, 255, 255);
+
+.tail span a {
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem;
   font-weight: 100;
@@ -238,14 +316,14 @@ span a {
   word-spacing: 0.25em;
 }
 
-/* GUITARS y BASSES */
+/* GUITARS & BASSES */
 .precontent {
   background: #101010;
   padding: 80px;
-  
 }
-.text-product h2 {
-  color: white;
+
+.precontent .text-product h2 {
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -253,16 +331,22 @@ span a {
   text-align: center;
 }
 
-.imglogo {
+.precontent .imglogo {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   opacity: 65%;
 }
 
-.text-h1 h1 {
-  color: white;
+.precontent .text-h1 h1 {
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   font-weight: 400;
@@ -271,104 +355,128 @@ span a {
   padding: 32px;
 }
 
+.precontent .hrseparate {
+  opacity: 50%;
+  color: white;
+}
+
 .guitarcontainer {
   background-color: #101010;
   padding: 80px;
   padding-left: 200px;
 }
 
-#guitarsSection {
+.guitarcontainer #guitarsSection {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 25px;  
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 25px;
 }
 
-#accessoriesSection {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 25px;  
-}
-
-.accessoriescontainer {
-  background-color: #101010;
-  padding: 80px;
-  padding-left: 200px;
-}
-
-
-.guitarShowcase img {
+.guitarcontainer .guitarShowcase img {
   width: 175px;
   height: 521px;
+  -webkit-transition: all 300ms;
   transition: all 300ms;
   position: relative;
 }
 
-.guitarShowcase img:hover {
-  transform: scale(1.15);
+.guitarcontainer .guitarShowcase img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
-.guitarShowcase h2 {
+.guitarcontainer .guitarShowcase h2 {
   padding-top: 35px;
-  color: white;
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
   text-decoration: none;
 }
 
-.guitarShowcase h3 {
-  color: white;
-  font-family: 'Bebas Neue', cursive;
+.guitarcontainer .guitarShowcase h3 {
+  color: #ffffff;
+  font-family: 'Bebas Neue', cursirve;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* ACCESSORIES */
+.accessoriescontainer {
+  background-color: #101010;
+  padding: 80px;
+  padding-left: 200px;
+}
+
+.accessoriescontainer #accessoriesSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 25px;
+}
+
+.accessoriescontainer .guitarShowcase img {
+  width: 175px;
+  height: 521px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  position: relative;
+}
+
+.accessoriescontainer .guitarShowcase img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.accessoriescontainer .guitarShowcase h2 {
+  padding-top: 35px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.accessoriescontainer .guitarShowcase h3 {
+  color: #ffffff;
+  font-family: 'Bebas Neue', cursirve;
   font-size: 1.5rem;
   font-weight: 400;
   text-decoration: none;
 }
 
 /* ARTISTS */
-
 #artists {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 30px;
   margin: 5px;
 }
 
-#artists2 {
-  display: flex;
-  padding: 30px;
-  margin: 5px;
-  flex-direction: row-reverse;
-}
-
-.artistimg {
+#artists .artistimg {
   width: 75%;
-  border-color: white;
+  border-color: #ffffff;
   border-style: ridge;
   opacity: 60%;
   height: 100%;
 }
 
-.artisttext {
+#artists .artisttext {
   padding: 25px;
   margin: 50px;
 }
 
-.hidden {
-  position: absolute;
-  opacity: 0;
-}
-
-.hidden:hover {
-  opacity: 100%;
-}
-
-.artisttext:hover {
-  transform: scale(1.05);
-}
-
-.h2artist {
-  color: white;
+#artists .h2artist {
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -376,83 +484,167 @@ span a {
   text-transform: uppercase;
 }
 
-.partist {
-  color: white;
+#artists .partist {
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 100;
   line-height: 2;
 }
 
+#artists .hidden {
+  position: absolute;
+  opacity: 0;
+}
+
+#artists .hidden:hover {
+  opacity: 100%;
+}
+
+#artists .artisttext:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#artists2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  margin: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#artists2 .artistimg {
+  width: 75%;
+  border-color: #ffffff;
+  border-style: ridge;
+  opacity: 60%;
+  height: 100%;
+}
+
+#artists2 .artisttext {
+  padding: 25px;
+  margin: 50px;
+}
+
+#artists2 .h2artist {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#artists2 .partist {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 2;
+}
+
+#artists2 .hidden {
+  position: absolute;
+  opacity: 0;
+}
+
+#artists2 .hidden:hover {
+  opacity: 100%;
+}
+
+#artists2 .artisttext:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 /* FORM */
 #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 50px;
   margin-top: -70px;
 }
-.formcontact {
+
+#form .formcontact {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
-  background-color: rgb(230, 230, 230);
+  background-color: #e6e6e6;
   width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.headerform {
+#form .headerform {
   width: 100%;
   background-color: black;
 }
 
-.headerform span {
+#form .headerform span {
   font-size: 100px;
   display: block;
   text-align: center;
   padding: 2.5rem;
 }
 
-.contact {
+#form .contact {
   width: 100%;
   padding: 0.8rem;
   overflow: hidden;
-  color: rgb(3, 3, 3);
+  color: #030303;
 }
 
-.contact label, .contact input, .contact textarea {
+#form .contact label, #form .contact input, #form .contact textarea {
   display: block;
   width: 100%;
   margin-bottom: 10px;
 }
 
-.contact input:not([type='submit']), .contact textarea {
+#form .contact input:not([type='submit']), #form .contact textarea {
   border: none;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  background-color: rgb(230, 230, 230);
+  border-bottom: 2px solid black;
+  background-color: #e6e6e6;
   margin-bottom: 10px;
   font-size: 20px;
   outline: none;
 }
 
-.contact textarea {
+#form .contact textarea {
   min-height: 100px;
 }
 
-input[type='submit'] {
+#form input[type='submit'] {
   padding: 10px;
   border: none;
-  background-color: rgb(182, 182, 182);
+  background-color: #b6b6b6;
   cursor: pointer;
 }
 
 /* ABOUT US */
 .aboutuscontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.imgcontainer img {
+.aboutuscontainer .imgcontainer img {
   height: 600px;
   width: 1600px;
 }
@@ -468,14 +660,32 @@ input[type='submit'] {
   width: 100%;
   margin-bottom: 170px;
 }
-.aboutuscontent {
-  width: 100%;
+
+.aboutuscontainer2 .imglogo {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 65%;
 }
 
-.aboutuscontent h1 {
+.aboutuscontainer2 .aboutuscontent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutuscontainer2 .aboutuscontent h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   color: white;
@@ -487,74 +697,104 @@ input[type='submit'] {
   text-align: center;
 }
 
-.quote {
+.aboutuscontainer2 .quote {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   color: white;
   font-weight: 400;
   text-decoration: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
   line-height: 1.4;
 }
 
-.ownerlogo img {
+.aboutuscontainer2 .ownerlogo img {
   margin-left: -91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 600px;
   height: 500px;
 }
 
-.owner {
+.aboutuscontainer2 .owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 100px;
   margin-bottom: 170px;
 }
 
-.container .owner h2 {
-  display: flex;  
+.aboutuscontainer2 .container .owner h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: white;
   font-weight: 400;
   text-decoration: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
   margin-left: 180px;
 }
 
-.greetings {
+.aboutuscontainer2 .greetings {
   padding: 10px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  color: rgb(190, 190, 190);
+  color: #bebebe;
   font-weight: 400;
   text-decoration: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 184px;
-  margin-inline-end: 0px;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 184px;
+          margin-inline-start: 184px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
   text-transform: uppercase;
 }
 
-/* Responsive mobile */
+#bar {
+  display: none;
+}
+
+.icon-menu {
+  display: none;
+}
+
+/* Responsive mobile  */
 @media (max-width: 767px) {
   /* INDEX */
-  .header {
-    padding-bottom: 25px;
+  .navSecondary {
+    width: 100%;
+    height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .logo {
-  top: 8px;
-  left: 210px;
-  }
-
   #bar {
     width: 100%;
     position: fixed;
@@ -562,10 +802,11 @@ input[type='submit'] {
     z-index: 1000;
     display: none;
   }
-
   .icon-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 42px;
     margin-top: 40px;
     left: 45px;
@@ -573,47 +814,46 @@ input[type='submit'] {
     z-index: 100000;
     opacity: 75%;
   }
-
-  .navSecondary {
-    width: 100%;
-    height: 1px;
-    display: flex;
-    justify-content: center;
+  .header {
+    padding-bottom: 25px;
   }
-  .buttoms {
+  .header .logo {
+    top: 8px;
+    left: 210px;
+  }
+  .header .buttoms {
     display: none;
   }
-
   .slider {
     width: 100%;
     height: auto;
     padding-bottom: 75px;
   }
-
   .slider img {
     height: 450px;
   }
-
   .site_footer {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 20px;
   }
-
-  .h2Footer{
+  .site_footer .h2Footer {
     padding-left: 60px;
     margin-top: 18px;
   }
-
-  p {
+  .site_footer p {
     font-size: 0.8rem;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(172, 172, 172);
+    color: #acacac;
     margin: 10px;
     padding-left: 25px;
   }
-
-  .email {
+  .site_footer .email {
     border-radius: 10px;
     font-size: 0.9rem;
     text-align: center;
@@ -621,28 +861,31 @@ input[type='submit'] {
     padding-right: 115px;
     text-indent: -30px;
   }
-  .btn {
+  .site_footer .btn {
     margin-bottom: -5px;
     border-radius: 10px;
     width: 40px;
     font-size: 10px;
     text-align: center;
-  
   }
   .tail {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding: 0px;
     padding-left: 0px;
     padding-right: 0px;
     background-color: #101010;
     color: #999;
     font-size: 0.5rem;
-    
-    
+    margin-left: 5px;
+    /* GUITARS & BASSES */
   }
-  span a {
-    color: rgb(255, 255, 255);
+  .tail span a {
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.4rem;
     font-weight: 100;
@@ -650,101 +893,96 @@ input[type='submit'] {
     text-transform: uppercase;
     word-spacing: 0.25em;
   }
-
-  /* GUITARS & BASSES */
   .precontent {
     background: #101010;
     padding: 40px;
     margin-left: 10px;
   }
-  .imglogo {
-    padding: 0px;
+  .precontent .imglogo {
+    padding: 10px;
   }
-  .text-product, .imglogo {
+  .precontent .text-product, .precontent .imglogo {
     width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 150px;
   }
-  
-  .text-h1 h1 {
-    font-size: 1.5rem; 
+  .precontent .text-h1 h1 {
+    font-size: 1.5rem;
     padding: 28px;
-  }
-
-  #guitarsSection {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    gap: 25px;  
   }
   .guitarcontainer {
     padding-left: 145px;
   }
-  .guitarShowcase img {
+  .guitarcontainer #guitarsSection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+  }
+  .guitarcontainer #guitarsSection .guitarShowcase img {
     width: 150px;
     height: 490px;
   }
-
   /* ACCESSORIES */
-
-  #accessoriesSection {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px;
-  }
-
   .accessoriescontainer {
     margin-top: -100px;
     padding: 0px;
     padding-left: 135px;
   }
-
+  .accessoriescontainer #accessoriesSection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+  }
   /* ARTISTS */
   #artists {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0px;
     margin: 0px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  
-  #artists2 {
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .artistimg {
+  #artists .artistimg {
     position: absolute;
     width: auto;
     height: auto;
     opacity: 60%;
   }
-
-  .artistimg img {
+  #artists .artistimg img {
     width: 400px;
     height: 400px;
   }
-
-  .hidden {
+  #artists .hidden {
     width: 400px;
     height: 400px;
   }
-  
-  .artisttext {
+  #artists .artisttext {
     padding: 25px;
     margin: 50px;
   }
-
-  .h2artist {
+  #artists .h2artist {
     text-align: center;
   }
-  
-  .partist {
+  #artists .partist {
     padding-top: 300px;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -753,42 +991,81 @@ input[type='submit'] {
     line-height: 2;
     text-align: left;
   }
-
-  /* ABOUT US */
-  .owner {
-    margin-bottom: 100px;
+  #artists2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .imgcontainer img {
+  #artists2 .artistimg {
+    position: absolute;
+    width: auto;
+    height: auto;
+    opacity: 60%;
+  }
+  #artists2 .artistimg img {
+    width: 400px;
+    height: 400px;
+  }
+  #artists2 .hidden {
+    width: 400px;
+    height: 400px;
+  }
+  #artists2 .artisttext {
+    padding: 25px;
+    margin: 50px;
+  }
+  #artists2 .h2artist {
+    text-align: center;
+  }
+  #artists2 .partist {
+    padding-top: 300px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 2;
+    text-align: left;
+  }
+  /* ABOUT US */
+  .aboutuscontainer .imgcontainer img {
     height: 500px;
     width: 550px;
   }
- 
-  .aboutuscontent h1 {
+  .aboutuscontainer2 .aboutuscontent .container h1 {
     word-spacing: 0.20em;
     font-size: 2.5rem;
   }
-  
-  .quote {
-    margin-inline-end: 25px;
+  .aboutuscontainer2 .aboutuscontent .container .quote {
+    -webkit-margin-end: 25px;
+            margin-inline-end: 25px;
     line-height: 1.4;
   }
-
-  
-  .owner {
-    flex-direction: column;
+  .aboutuscontainer2 .aboutuscontent .container .owner {
+    margin-bottom: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  
-  .container .owner h2 {
+  .aboutuscontainer2 .aboutuscontent .container .owner h2 {
     margin-left: 1px;
   }
-  
-  .greetings {
+  .aboutuscontainer2 .aboutuscontent .container .owner .greetings {
     padding: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px
-   
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
   }
-
   /* HELP & SUPPORT */
   .helpsupport {
     color: white;
@@ -801,161 +1078,143 @@ input[type='submit'] {
   }
 }
 
-/* Desktop */
-@media screen and (min-width: 768px) {
-  #bar {
-    display: none;
-  }
-  .icon-menu {
-    display: none;
-  }
-}
-
-
 /* IPAD */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* INDEX */
   .header {
-    justify-content: left;
-    padding: 5px; 
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 5px;
+    margin-top: -10px;
   }
-  
-  .logo {
+  .header .logo {
     height: 60px;
     margin-left: 0px;
     bottom: 15px;
   }
-  
-  .buttoms {
-    margin-top: 3px;
+  .header .buttoms {
+    margin-top: 1px;
   }
-  .ulMain .liMain .aMain {  
-    margin: 20px;
+  .header .ulMain .liMain .aMain {
+    margin: 15px;
     font-size: 1.8rem;
   }
-
   .slider {
     height: 730px;
   }
-  
   .slider ul {
     height: 730px;
   }
-
   .form {
     font-size: 0.6rem;
   }
-  
-  .h2Footer {
+  .form .h2Footer {
     letter-spacing: 1px;
   }
-  
-  p {
+  .form p {
     margin: 2px;
     padding-bottom: 10px;
-    
   }
-  .email {
+  .form .email {
     margin-left: 0px;
     padding-right: 30px;
     text-indent: -30px;
   }
-  .btn {
+  .form .btn {
     margin-bottom: 0px;
     border-radius: 10px;
   }
-
-  
-  .h2Media {
+  .media .h2Media {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
   }
-
-  /* GUITARS & BASSES */
+  .media .icons {
+    padding-left: 5px;
+  }
+  /* GUITAR & BASSES */
   .precontent {
     background: #101010;
     padding: 40px;
     margin-left: 10px;
   }
-  .text-product, .imglogo {
+  .precontent .text-product, .precontent .imglogo {
     width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 300px;
   }
-
-  #guitarsSection {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 50px;  
-  }
-
   .guitarcontainer {
     padding-left: 100px;
   }
-  .guitarShowcase img {
+  .guitarcontainer #guitarSection {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+  .guitarcontainer .guitarShowcase img {
     width: 110px;
     height: 440px;
   }
-  
   /* ACCESSORIES */
-  #accessoriesSection {
-    gap: 50px;
-    padding-bottom: 100px;
-  }
-
   .accessoriescontainer {
     margin-top: -100px;
     padding: 0px;
     padding-left: 40px;
   }
-
-  /* ARTISTS */
+  .accessoriescontainer #accessoriesSection {
+    gap: 50px;
+    padding-bottom: 100px;
+  }
+  .accessoriescontainer .guitarShowcase img {
+    width: 110px;
+    height: 440px;
+  }
+  /* ARTITS */
   #artists {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0px;
     margin: 0px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  
-  #artists2 {
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .artistimg {
+  #artists .artistimg {
     position: relative;
     width: auto;
     height: auto;
     opacity: 60%;
   }
-
-  .artistimg img {
+  #artists .artistimg img {
     width: 400px;
     height: 400px;
   }
-
-  .hidden {
+  #artists .hidden {
     width: 400px;
     height: 400px;
   }
-  
-  .artisttext {
+  #artists .artisttext {
     padding: 25px;
     margin: 50px;
   }
-
-  .h2artist {
+  #artists .h2artist {
     text-align: center;
     margin-top: -50px;
   }
-  
-  .partist {
+  #artists .partist {
     padding-top: 12px;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -964,50 +1223,90 @@ input[type='submit'] {
     line-height: 2;
     text-align: left;
   }
-
-  /* ABOUT US */
-  .owner {
-    margin-bottom: 100px;
+  #artists2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .imgcontainer img {
+  #artists2 .artistimg {
+    position: relative;
+    width: auto;
+    height: auto;
+    opacity: 60%;
+  }
+  #artists2 .artistimg img {
+    width: 400px;
+    height: 400px;
+  }
+  #artists2 .hidden {
+    width: 400px;
+    height: 400px;
+  }
+  #artists2 .artisttext {
+    padding: 25px;
+    margin: 50px;
+  }
+  #artists2 .h2artist {
+    text-align: center;
+    margin-top: -50px;
+  }
+  #artists2 .partist {
+    padding-top: 12px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 2;
+    text-align: left;
+  }
+  /* ABOUT US */
+  .aboutuscontainer .imgcontainer img {
     height: 500px;
     width: 768px;
   }
- 
-  .aboutuscontent h1 {
+  .aboutuscontainer2 .aboutuscontent .aboutuscontent h1 {
     word-spacing: 0.20em;
     font-size: 2.5rem;
   }
-  
-  .quote {
-    margin-inline-end: 25px;
+  .aboutuscontainer2 .aboutuscontent .quote {
+    -webkit-margin-end: 25px;
+            margin-inline-end: 25px;
     line-height: 1.4;
   }
-
-  
-  .owner {
-    flex-direction: column;
+  .aboutuscontainer2 .aboutuscontent .owner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
   }
-
-  .ownerlogo {
+  .aboutuscontainer2 .aboutuscontent .ownerlogo {
     padding-left: 130px;
   }
-  
-  .container .owner h2 {
+  .aboutuscontainer2 .aboutuscontent .container .owner h2 {
     margin-left: 1px;
     padding-left: 180px;
   }
-  
-  .greetings {
+  .aboutuscontainer2 .aboutuscontent .greetings {
     padding: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px
-   
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
   }
-
   /* HELP & SUPPORT */
   .helpsupport {
     padding-bottom: 40px;
-    margin-right: 0px;
+    margin-left: 0px;
   }
 }
+/*# sourceMappingURL=main.css.map */

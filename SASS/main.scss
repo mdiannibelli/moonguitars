@@ -251,12 +251,8 @@ body {
     padding: 80px;
 
     .text-product h2 {
-        color: $whiteColor;
-        font-family: $font3;
+        @extend %text;
         font-size: 1rem;
-        font-weight: 400;
-        text-decoration: none;
-        text-align: center;
     }
 
     .imglogo {
@@ -268,12 +264,8 @@ body {
     }
 
     .text-h1 h1 {
-        color: $whiteColor;
-        font-family: $font3;
+        @extend %text;
         font-size: 3rem;
-        font-weight: 400;
-        text-decoration: none;
-        text-align: center;
         padding: 32px;
     }
     .hrseparate {
@@ -306,20 +298,17 @@ body {
     }
 
     .guitarShowcase h2 {
+      @extend %text2;
         padding-top: 35px;
-        color: $whiteColor;
         font-family: $font3;
-        font-size: 1.5rem;
         font-weight: 100;
-        text-decoration: none;
     }
 
     .guitarShowcase h3 {
-        color: $whiteColor;
+        @extend %text2;
         font-family: $font2;
-        font-size: 1.5rem;
         font-weight: 400;
-        text-decoration: none;
+        
     }
 }
 
@@ -348,20 +337,16 @@ body {
     }
 
     .guitarShowcase h2 {
+      @extend %text2;
         padding-top: 35px;
-        color: $whiteColor;
         font-family: $font3;
-        font-size: 1.5rem;
         font-weight: 100;
-        text-decoration: none;
     }
 
     .guitarShowcase h3 {
-        color: $whiteColor;
+        @extend %text2;
         font-family: $font2;
-        font-size: 1.5rem;
         font-weight: 400;
-        text-decoration: none;
     }
 }
 
@@ -370,101 +355,11 @@ body {
 /* ARTISTS */
 
 #artists {
-    display: flex;
-    padding: 30px;
-    margin: 5px;
-
-    .artistimg {
-        width: 75%;
-        border-color: $whiteColor;
-        border-style: ridge;
-        opacity: 60%;
-        height: 100%;
-    }
-
-    .artisttext {
-        padding: 25px;
-        margin: 50px;
-    }
-
-    .h2artist {
-        color: $whiteColor;
-        font-family: $font3;
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-
-    .partist {
-        color: $whiteColor;
-        font-family: $font3;
-        font-size: 1rem;
-        font-weight: 100;
-        line-height: 2;
-    }
-    
-    .hidden {
-        position: absolute;
-        opacity: 0;
-    }
-    
-    .hidden:hover {
-        opacity: 100%;
-    }
-
-    .artisttext:hover {
-        transform: scale(1.05);
-    }
+  @include artist (row)
 }
 
 #artists2 {
-    display: flex;
-    padding: 30px;
-    margin: 5px;
-    flex-direction: row-reverse;
-
-    .artistimg {
-        width: 75%;
-        border-color: $whiteColor;
-        border-style: ridge;
-        opacity: 60%;
-        height: 100%;
-    }
-
-    .artisttext {
-        padding: 25px;
-        margin: 50px;
-    }
-
-    .h2artist {
-        color: $whiteColor;
-        font-family: $font3;
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-
-    .partist {
-        color: $whiteColor;
-        font-family: $font3;
-        font-size: 1rem;
-        font-weight: 100;
-        line-height: 2;
-    }
-    .hidden {
-        position: absolute;
-        opacity: 0;
-    }
-    
-    .hidden:hover {
-        opacity: 100%;
-    }
-
-    .artisttext:hover {
-        transform: scale(1.05);
-    }
+  @include artist (row-reverse)
 }
 
 /* FORM */
@@ -569,24 +464,18 @@ body {
       }
       
       .aboutuscontent h1 {
+        @extend %text3;
         font-family: 'Montserrat', sans-serif;
         font-size: 3rem;
-        color: $whiteColor;
-        font-weight: 400;
-        text-decoration: none;
         text-transform: uppercase;
         word-spacing: 0.25em;
         margin-top: 60px;
-        text-align: center;
       }
       
       .quote {
-        text-align: center;
+        @extend %text3;
         font-family: $font3;
         font-size: 1.5rem;
-        color: $whiteColor;
-        font-weight: 400;
-        text-decoration: none;
         margin-block-start: 1em;
         margin-block-end: 1em;
         margin-inline-start: 0px;

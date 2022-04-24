@@ -6,3 +6,71 @@ $bgColor: #101010;
 $font1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $font2: 'Bebas Neue', cursive;
 $font3: 'Montserrat', sans-serif;
+%text {
+    color: $whiteColor;
+    font-family: $font3;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+}
+%text2 {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: $whiteColor;
+}
+%text3 {
+    color: $whiteColor;
+    font-weight: 400; 
+    text-decoration: none;
+    text-align: center;
+}
+
+@mixin artist ($flex) {
+    display: flex;
+    padding: 30px;
+    margin: 5px;
+    flex-direction: $flex;
+
+    .artistimg {
+        width: 75%;
+        border-color: $whiteColor;
+        border-style: ridge;
+        opacity: 60%;
+        height: 100%;
+    }
+
+    .artisttext {
+        padding: 25px;
+        margin: 50px;
+    }
+
+    .h2artist {
+        color: $whiteColor;
+        font-family: $font3;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .partist {
+        color: $whiteColor;
+        font-family: $font3;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 2;
+    }
+    
+    .hidden {
+        position: absolute;
+        opacity: 0;
+    }
+    
+    .hidden:hover {
+        opacity: 100%;
+    }
+
+    .artisttext:hover {
+        transform: scale(1.05);
+    }
+}

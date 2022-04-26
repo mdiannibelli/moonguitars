@@ -701,13 +701,11 @@ body {
                   }
                 
                   .artistimg img {
-                    width: 400px;
-                    height: 400px;
+                    @extend %artist;
                   }
                 
                   .hidden {
-                    width: 400px;
-                    height: 400px;
+                    @extend %artist;
                   }
                   
                   .artisttext {
@@ -744,13 +742,11 @@ body {
                       }
                     
                       .artistimg img {
-                        width: 400px;
-                        height: 400px;
+                        @extend %artist;
                       }
                     
                       .hidden {
-                        width: 400px;
-                        height: 400px;
+                        @extend %artist;
                       }
                       
                       .artisttext {
@@ -951,13 +947,11 @@ body {
     }
   
     .artistimg img {
-      width: 400px;
-      height: 400px;
+      @extend %artist;
     }
   
     .hidden {
-      width: 400px;
-      height: 400px;
+      @extend %artist;
     }
     
     .artisttext {
@@ -996,13 +990,11 @@ body {
     }
   
     .artistimg img {
-      width: 400px;
-      height: 400px;
+      @extend %artist;
     }
   
     .hidden {
-      width: 400px;
-      height: 400px;
+      @extend %artist;
     }
     
     .artisttext {

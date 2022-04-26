@@ -24,6 +24,10 @@ $font3: 'Montserrat', sans-serif;
     text-decoration: none;
     text-align: center;
 }
+%artist {
+    width: 400px;
+    height: 400px;
+}
 
 @mixin artist ($flex) {
     display: flex;

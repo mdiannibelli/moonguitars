@@ -777,6 +777,14 @@ body {
   text-transform: uppercase;
 }
 
+#bar {
+  display: none;
+}
+
+.icon-menu {
+  display: none;
+}
+
 .fixed-top {
   top: 40px;
   left: 0px;
@@ -1115,7 +1123,6 @@ body {
 /* IPAD */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* INDEX */
-  
   .header {
     -webkit-box-pack: left;
         -ms-flex-pack: left;

@@ -777,17 +777,47 @@ body {
   text-transform: uppercase;
 }
 
-#bar {
-  display: none;
+.fixed-top {
+  top: 40px;
+  left: 0px;
+  position: absolute;
 }
 
-.icon-menu {
-  display: none;
+#navbarToggleExternalContent {
+  padding-top: 80px;
+  position: absolute;
+  left: -10px;
 }
 
+.bg-transparent {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.responsivetext {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(2, 2, 2);
+  opacity: 1;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.aresponsive {
+  text-decoration: none;
+}
+
+#navresponsive {
+  display: none;
+}
 /* Responsive mobile  */
 @media (max-width: 767px) {
   /* INDEX */
+  #navresponsive {
+    display: flex;
+  }
   .navSecondary {
     width: 100%;
     height: 1px;
@@ -1085,6 +1115,7 @@ body {
 /* IPAD */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* INDEX */
+  
   .header {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
